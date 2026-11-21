@@ -125,6 +125,10 @@ button{font:inherit}
 .projects-heading h2{font-size:clamp(38px,4.4vw,55px)}
 .projects-heading>p{max-width:260px;margin:0 0 5px;color:#74737e;font-size:11px;line-height:1.7}
 .project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+.project-card-featured{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr}
+.project-card-featured .project-cover{height:auto;min-height:280px}
+.project-card-featured .project-body{display:flex;flex-direction:column;justify-content:center;padding:clamp(24px,4vw,48px)}
+.project-card-featured .project-finding{grid-template-columns:140px 1fr}
 .project-card{overflow:hidden;border:1px solid #e1dce4;border-radius:5px;background:var(--paper);transition:transform .2s,box-shadow .2s}
 .project-card:hover{transform:translateY(-3px);box-shadow:0 13px 28px #24243a12}
 .project-cover{position:relative;display:block;overflow:hidden;height:210px;background:#242943}
@@ -227,6 +231,10 @@ button{font:inherit}
   .projects-heading{display:block;margin-bottom:22px}
   .projects-heading>p{margin-top:10px}
   .project-grid{grid-template-columns:1fr;gap:12px}
+  .project-card-featured{grid-column:auto;display:block}
+  .project-card-featured .project-cover{height:210px;min-height:0}
+  .project-card-featured .project-body{padding:18px 19px 19px}
+  .project-card-featured .project-finding{grid-template-columns:95px 1fr}
   .project-cover{height:210px}
   .project-body{padding:16px}
   .education{grid-template-columns:1fr;gap:15px;padding:64px 0}
